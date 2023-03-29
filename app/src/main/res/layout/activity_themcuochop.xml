@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ThemActivity">
+
+  <TextView
+      android:id="@+id/textView_ThemCuocHop"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="Thêm Lịch Họp"
+      android:textAlignment="center"
+      android:textSize="30sp"
+      android:textStyle="bold"
+      android:background="@color/teal_200"
+      android:paddingTop="20dp"
+      android:paddingBottom="20dp"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      />
+
+  <EditText
+      android:id="@+id/edtText_TieuDeCuocHop"
+      android:layout_width="match_parent"
+      android:layout_height="60dp"
+      android:hint="Nhập tiêu đề cuộc họp"
+      android:layout_marginTop="30dp"
+      android:layout_marginStart="15dp"
+      android:layout_marginEnd="15dp"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintTop_toBottomOf="@id/textView_ThemCuocHop"
+      />
+
+  <EditText
+      android:id="@+id/edtText_ChuDeCuocHop"
+      android:layout_width="match_parent"
+      android:layout_height="60dp"
+      android:hint="Nhập chủ đề cuộc họp"
+      android:layout_marginTop="5dp"
+      android:layout_marginStart="15dp"
+      android:layout_marginEnd="15dp"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintTop_toBottomOf="@id/edtText_TieuDeCuocHop"
+      />
+
+  <Button
+      android:id="@+id/DatePickerBtn"
+      android:layout_width="180dp"
+      android:layout_height="wrap_content"
+      android:text="Pick Date"
+      android:textSize="20sp"
+      android:textColor="@color/white"
+      android:paddingStart="10dp"
+      android:paddingTop="12dp"
+      android:paddingBottom="12dp"
+      android:layout_marginTop="5dp"
+      android:layout_marginStart="5dp"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@id/edtText_ChuDeCuocHop"
+      />
+
+  <TextView
+      android:layout_width="120dp"
+      android:layout_height="wrap_content"
+      android:id="@+id/textView_Date"
+      android:text="Chọn Ngày"
+      android:textStyle="bold"
+      android:textSize="20sp"
+      android:paddingStart="10dp"
+      android:paddingTop="10dp"
+      android:paddingBottom="10dp"
+      android:layout_marginTop="15dp"
+      android:layout_marginStart="15dp"
+      app:layout_constraintStart_toEndOf="@id/DatePickerBtn"
+      app:layout_constraintTop_toBottomOf="@id/edtText_ChuDeCuocHop"
+      />
+
+  <Button
+      android:id="@+id/TimerPickerStartBtn"
+      android:layout_width="180dp"
+      android:layout_height="wrap_content"
+      android:text="PICK TIME"
+      android:textSize="20sp"
+      android:textColor="@color/white"
+      android:paddingStart="10dp"
+      android:paddingTop="12dp"
+      android:paddingBottom="12dp"
+      android:layout_marginTop="10dp"
+      android:layout_marginStart="5dp"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@id/DatePickerBtn"
+      />
+
+  <TextView
+      android:layout_width="170dp"
+      android:layout_height="wrap_content"
+      android:id="@+id/textView_TimerStart"
+      android:text="Chọn Thời Gian Bắt Đầu"
+      android:textStyle="bold"
+      android:textSize="20sp"
+      android:paddingStart="10dp"
+      android:paddingTop="10dp"
+      android:paddingBottom="10dp"
+      android:layout_marginTop="10dp"
+      android:layout_marginStart="15dp"
+      app:layout_constraintStart_toEndOf="@id/TimerPickerStartBtn"
+      app:layout_constraintTop_toBottomOf="@id/textView_Date"
+      />
+
+  <Button
+      android:id="@+id/TimerPickerEndBtn"
+      android:layout_width="180dp"
+      android:layout_height="wrap_content"
+      android:text="PICK TIME"
+      android:textSize="20sp"
+      android:textColor="@color/white"
+      android:paddingStart="10dp"
+      android:paddingTop="12dp"
+      android:paddingBottom="12dp"
+      android:layout_marginTop="10dp"
+      android:layout_marginStart="5dp"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@id/TimerPickerStartBtn"
+      />
+
+  <TextView
+      android:layout_width="170dp"
+      android:layout_height="wrap_content"
+      android:id="@+id/textView_TimerEnd"
+      android:text="Chọn Thời Gian Kết Thúc"
+      android:textStyle="bold"
+      android:textSize="20sp"
+      android:paddingStart="10dp"
+      android:paddingTop="10dp"
+      android:paddingBottom="10dp"
+      android:layout_marginTop="5dp"
+      android:layout_marginStart="15dp"
+      app:layout_constraintStart_toEndOf="@id/TimerPickerStartBtn"
+      app:layout_constraintTop_toBottomOf="@id/textView_TimerStart"
+      />
+
+  <Button
+      android:id="@+id/btn_Them"
+      android:layout_width="150dp"
+      android:layout_height="wrap_content"
+      android:text="Thêm"
+      android:paddingTop="10dp"
+      android:paddingBottom="10dp"
+      android:textSize="20sp"
+      android:textAlignment="center"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@id/TimerPickerEndBtn"
+      app:layout_constraintBottom_toBottomOf="parent"
+      android:layout_marginStart="30dp"
+      />
+
+
+  <Button
+      android:id="@+id/btn_Huy"
+      android:layout_width="150dp"
+      android:layout_height="wrap_content"
+      android:text="Huỷ"
+      android:paddingTop="10dp"
+      android:paddingBottom="10dp"
+      android:textSize="20sp"
+      android:textAlignment="center"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintStart_toEndOf="@id/btn_Them"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintTop_toBottomOf="@id/textView_TimerEnd"
+      />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
